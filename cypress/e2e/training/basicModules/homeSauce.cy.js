@@ -1,5 +1,5 @@
-import homeSaucePage from "../../pages/saucedemo/homeSaucePage";
-import inventorySaucePage from "../../pages/saucedemo/inventorySaucePage";
+import homeSaucePage from "../../../pages/saucedemo/homeSaucePage";
+import inventorySaucePage from "../../../pages/saucedemo/inventorySaucePage";
 
 describe('POM Implementation',()=>{
     beforeEach(()=>{

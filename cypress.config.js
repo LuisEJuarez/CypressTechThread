@@ -7,7 +7,8 @@ module.exports = defineConfig({
     },
     //specPattern: 'cypress/e2e/**/*.js',
   },
-
+  watchForFileChanges: false,
+  video: false,
   chromeWebSecurity: false,
   
 });
