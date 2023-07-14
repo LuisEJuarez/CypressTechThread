@@ -1,0 +1,25 @@
+[
+    {
+        "testName": "Validate Scenario 1",
+        "selectGroup": "Group 1, option 2",
+        "selectOne": "Mrs.",
+        "oldSelect": "Yellow",
+        "multiSelectDropDown": 
+            {"opt1":"Black"},
+        "multiSelectStandard": "Saab"
+    },    
+    {
+        "testName": "Validate Scenario 2",
+        "selectGroup": "A root option",
+        "selectOne": "Other",
+        "oldSelect": "Blue",
+        "multiSelectDropDown": 
+            {
+                "opt1": "Black",
+                "opt2": "Blue",
+                "opt3": "Green"
+            },
+        "multiSelectStandard": "Audi"
+    }
+
+]

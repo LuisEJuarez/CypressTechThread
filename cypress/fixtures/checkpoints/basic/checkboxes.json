@@ -1,0 +1,91 @@
+[
+    {
+        "chekboxName": "tree-node-home",
+        "nodeName": "home",
+        "parent": true
+    },    
+    {
+        "chekboxName": "tree-node-desktop",
+        "nodeName": "desktop",
+        "parent": true
+    },    
+    {
+        "chekboxName": "tree-node-notes",
+        "nodeName": "notes",
+        "parent": false
+    },    
+    {
+        "chekboxName": "tree-node-commands",
+        "nodeName": "commands",
+        "parent": false
+    },    
+    {
+        "chekboxName": "tree-node-documents",
+        "nodeName": "documents",
+        "parent": true
+    },    
+    {
+        "chekboxName": "tree-node-workspace",
+        "nodeName": "workspace",
+        "parent": true
+    },    
+    {
+        "chekboxName": "tree-node-react",
+        "nodeName": "react",
+        "parent": false
+    },    
+    {
+        "chekboxName": "tree-node-angular",
+        "nodeName": "angular",
+        "parent": false
+    },    
+    {
+        "chekboxName": "tree-node-veu",
+        "nodeName": "veu",
+        "parent": false
+    },    
+    {
+        "chekboxName": "tree-node-office",
+        "nodeName": "office",
+        "parent": true
+    },    
+    {
+        "chekboxName": "tree-node-public",
+        "nodeName": "public",
+        "parent": false
+    }
+    ,    
+    {
+        "chekboxName": "tree-node-private",
+        "nodeName": "private",
+        "parent": false
+    }
+    ,    
+    {
+        "chekboxName": "tree-node-classified",
+        "nodeName": "classified",
+        "parent": false
+    }
+    ,    
+    {
+        "chekboxName": "tree-node-general",
+        "nodeName": "general",
+        "parent": false
+    }
+    ,    
+    {
+        "chekboxName": "tree-node-downloads",
+        "nodeName": "downloads",
+        "parent": true
+    },    
+    {
+        "chekboxName": "tree-node-wordFile",
+        "nodeName": "wordFile",
+        "parent": false
+    },    
+    {
+        "chekboxName": "tree-node-excelFile",
+        "nodeName": "excelFile",
+        "parent": false
+    }
+]
