@@ -1,0 +1,53 @@
+describe('Alerts', () => {
+    beforeEach(() => {
+        cy.visit(`${Cypress.env("theInternet")}/javascript_alerts`);
+    });
+
+    it("JS Alert", () => {
+        cy.contains('button','Click for JS Alert').click();
+        cy.on('window:alert', (message) => {
+            expect(message).to.be.equal("I am a JS Alert");
+        });
+
+        cy.on('window:alert', () => true);
+
+        cy.get('#result').should('have.text' , 'You successfully clicked an alert');
+    });
+
+    it("JS Confirm(Accept)", () => {
+        cy.contains('button','Click for JS Confirm').click();
+        cy.on('window:confirm', (message) => {
+            expect(message).to.be.equal("I am a JS Confirm");
+        });
+
+        cy.on('window:confirm', () => true);
+
+        cy.get('#result').should('have.text' , 'You clicked: Ok');
+    });
+
+    it("JS Confirm(Cancel)", () => {
+        cy.contains('button','Click for JS Confirm').click();
+        cy.on('window:confirm', (message) => {
+            expect(message).to.be.equal("I am a JS Confirm");
+        });
+
+        cy.on('window:confirm', () => false);
+
+        cy.get('#result').should('have.text' , 'You clicked: Cancel');
+    });
+
+    it("JS Prompt", () => {
+        cy.window().then( (window) => {
+            cy.stub(window,'prompt').returns('This is a hello world from the prompt alert');
+
+            cy.contains('button','Click for JS Prompt').click();
+
+            cy.on('window:confirm', (message) => {
+                expect(message).to.be.equal("I am a JS prompt");
+            });
+        });
+
+        cy.get('#result').should('contain' , 'You entered:');
+    });
+
+});

@@ -5,12 +5,20 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "cypress:open": "cypress open"
+    "runner": "cypress open --e2e --browser chrome"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@cypress/xpath": "^2.0.3",
     "cypress": "^12.17.1"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.4",
+    "@testing-library/cypress": "^9.0.0",
+    "cy-verify-downloads": "^0.1.15",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-real-events": "^1.9.1"
   }
 }
