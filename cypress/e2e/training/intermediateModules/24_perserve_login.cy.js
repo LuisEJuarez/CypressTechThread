@@ -6,7 +6,7 @@ describe('Perserve Login', () => {
             cy.get('#userName').type('test');
             cy.get('#password').type('Test1234*');
             cy.get('#login').click();
-            cy.url('').should('contain', 'profile');
+            cy.url().should('contain', 'profile');
         });
     });
 
