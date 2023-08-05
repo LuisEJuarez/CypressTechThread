@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "runner": "cypress open --e2e --browser chrome"
+    "runner": "cypress open --e2e --browser chrome",
+    "cypress-run": "cypress run --browser firefox --headed --spec 'cypress/e2e/training/checkpoints/intermediate/userStory_1_Login.cy.js'"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,8 @@
     "@testing-library/cypress": "^9.0.0",
     "cy-verify-downloads": "^0.1.15",
     "cypress-file-upload": "^5.0.8",
-    "cypress-real-events": "^1.9.1"
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "cypress-real-events": "^1.9.1",
+    "node-xlsx": "^0.23.0"
   }
 }

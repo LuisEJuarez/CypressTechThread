@@ -17,5 +17,28 @@
 import './commands'
 import "cypress-real-events";
 import "./exceptions"
+import 'cypress-mochawesome-reporter/register';
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+/*
+beforeEach(() => {
+    cy.session('mySession', () => {
+        cy.visit(`${Cypress.env("demoQA")}/login`);
+        cy.get('#userName').type('test');
+        cy.get('#password').type('Test1234*');
+        cy.get('#login').click();
+        cy.url().should('contain', 'profile');
+    });
+});
+
+afterEach(() => {
+    cy.clearCookies();
+    cy.getCookies().then( (cookies) => {
+        cy.log("Cookies: ",cookies);
+        expect(cookies).to.have.length(0);
+    });
+
+});
+*/
